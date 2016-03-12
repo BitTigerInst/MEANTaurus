@@ -1,4 +1,4 @@
-# MEANTaurus - Build an Amazon clone: MEAN + Stripe Payment
+# MEANTaurus - Build an Amazon clone
 
 Description
 -----------
