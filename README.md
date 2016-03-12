@@ -1,5 +1,6 @@
 # MEANTaurus - Build an Amazon clone
 
+![](https://github.com/BitTigerInst/MEANTaurus/blob/master/Amazon.jpg)
 
 Description
 -----------
