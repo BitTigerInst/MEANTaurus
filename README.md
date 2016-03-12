@@ -1,4 +1,5 @@
-# MEANTaurus - Build an Amazon clone: MEAN + Stripe Payment
+# MEANTaurus - Build an Amazon clone
+
 
 Description
 -----------
@@ -13,7 +14,8 @@ Based on our experiences on web development and descriptions metioned above, we 
 Resource
 --------
 
-1. __[Build and Amazon clone: Nodejs + MongoDB + Stripe Payment]__ https://www.udemy.com/build-an-amazon-clone-nodejs-stripe-elasticsearch/
+1. [Udemy: Build and Amazon clone: Nodejs + MongoDB + Stripe Payment]( https://www.udemy.com/build-an-amazon-clone-nodejs-stripe-elasticsearch/)
+
 
 
 Language & Framework
