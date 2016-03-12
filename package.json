@@ -1,0 +1,17 @@
+{
+  "name": "mean_taurus",
+  "version": "1.0.0",
+  "description": "Build an Amazon clone",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cosmo",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "express": "^4.13.4",
+    "mongoose": "^4.4.7",
+    "morgan": "^1.7.0"
+  }
+}
