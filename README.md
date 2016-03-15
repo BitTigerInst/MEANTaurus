@@ -17,8 +17,6 @@ Resource
 
 1. [Udemy: Build and Amazon clone: Nodejs + MongoDB + Stripe Payment]( https://www.udemy.com/build-an-amazon-clone-nodejs-stripe-elasticsearch/)
 
-
-
 Language & Framework
 --------------------
 
