@@ -1,5 +1,6 @@
 var passport = require('passport');
-var LocalStrategy = require('passport-local').Strategy();
+var LocalStrategy = require('passport-local').Strategy;
+var User = require('../models/user');
 
 /* 
 In a typical web application, the credentials used to authenticate a user will only be transmitted during 
@@ -10,7 +11,6 @@ set in the user's browser.
 // serialize and deserialize for the login session
 // only the user ID is serialized to the session, keeping the amount of data stored within the session small. 
 passport.serializeUser(function(user, done) {
-	//
 	done(null, user._id);
 });
 
@@ -27,7 +27,7 @@ passport.deserializeUser(function(id, done) {
 passport.use('local-login', new LocalStrategy({
 	usernameField: 'email', // Use the email as the user name field
 	passwordField: 'password', // Use the password as the password field
-	passReqToCallback: true
+	passReqToCallback: true // As shown below, the req is passed to the callback
 }, function(req, email, password, done) {
 	// function to validate the input email and password
 	User.findOne({ email: email }, function(err, user) {
@@ -43,7 +43,7 @@ passport.use('local-login', new LocalStrategy({
 			return done(null, false, req.flash('loginMessage', 'Oops! Wrong Password'));
 		}
 		
-		return done(null, user);
+		return done(null, user); // The first arg is about sever err. Note that authentical failure is usually a normal case, not an err.
 	});
 }));
 
